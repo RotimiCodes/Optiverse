@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/back_arrow"
+        android:background="@color/trans"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/sequel_sans_medium_head"
+        android:text="Activate using Debit Card"
+        android:textAppearance="@style/head"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/back_btn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/user_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28sp"
+        android:fontFamily="@font/sequel_sans_medium_body"
+        android:text="User ID"
+        android:textColor="@color/head_text_black"
+        android:textSize="14sp"
+        android:layout_marginTop="112dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/debit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/text_box"
+        android:fontFamily="@font/sequel_sans_medium_head"
+        android:text="Debit Card Pin"
+        android:textAppearance="@style/head"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EditTextDateOfBirth" />
+
+    <EditText
+        android:id="@+id/EditTextDebitCardPin"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:background="@drawable/text_box"
+        android:ems="15"
+        android:hint="Last 4 digits of your Debit Card"
+        android:paddingStart="12dp"
+        android:paddingEnd="14dp"
+        android:textSize="14sp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/debit_text" />
+
+    <EditText
+        android:id="@+id/EditTextBVN"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:ems="15"
+        android:hint="Account Number/Email"
+        android:textSize="14sp"
+        android:paddingStart="12dp"
+        android:background="@drawable/text_box"
+        app:layout_constraintTop_toBottomOf="@id/user_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/DOBText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28sp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/sequel_sans_medium_body"
+        android:text="Last 4 digits of your Debit Card"
+        android:textColor="@color/head_text_black"
+        android:textSize="14sp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/EditTextDateOfBirth"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EditTextBVN" />
+
+
+    <EditText
+        android:id="@+id/EditTextDateOfBirth"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:background="@drawable/text_box"
+        android:ems="15"
+        android:hint="Last 4 digits of your Debit Card"
+        android:paddingStart="12dp"
+        android:paddingEnd="14dp"
+        android:layout_marginTop="4dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/DOBText" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/border"
+        android:text="Activate"
+        android:layout_marginBottom="60dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

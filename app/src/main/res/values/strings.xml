@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">OptiVerse e-Token</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+
+
+
+
+    <!--fields validation-->
+    <string name="accesscode_verify">Access code must be 10-digits</string>
+    <string name="username_verify">Username must be provided</string>
+    <string name="password_verify">Password must be provided</string>
+
+    <string name="accountnumber_verify">Account Number must be 10-digits</string>
+    <string name="pin_verify">A valid PIN must be provided</string>
+
+    <string name="dateofbirth_verify">Enter a Valid Date of Birth</string>
+    <string name="phonenumber_verify"> Phone Number must be 11 digits</string>
+
+
+    <string name="otp_verify">Enter the one-time password sent to your mobile number and email address.</string>
+    <string name="get_code_from_bank">Get your Authentication code through the bank branch or call OptiConnect on 0700OptiConnect (07006784687)</string>
+    <string name="welcome_string">Generates One Time Passwords (OTPs) used in the authentication of electronic transactions.</string>
+</resources>

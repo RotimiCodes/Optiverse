@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#25000000">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="370dp"
+        android:layout_height="390dp"
+        android:background="@drawable/pop_up_box"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/trans"
+            android:src="@drawable/close_ic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/text_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose preferred method of onboarding!"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="61dp"
+            android:textColor="@color/primary"
+            android:fontFamily="@font/sequel_sans_medium_body"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:lineHeight="27dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bvn"
+            android:layout_width="338dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:layout_marginTop="40dp"
+            android:text="BVN"
+            android:textAppearance="@style/button_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_top" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/debit_card"
+            android:layout_width="338dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:layout_marginTop="20dp"
+            android:text="Debit Card"
+            android:textAppearance="@style/button_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bvn" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/auth_code"
+            android:layout_width="338dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:layout_marginTop="20dp"
+            android:text="Authorization Code"
+            android:textAppearance="@style/button_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/debit_card" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
